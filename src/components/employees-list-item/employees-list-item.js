@@ -10,7 +10,7 @@ class EmployeesListItem extends Component {
       rise: false,
     }
   }
-  changeIncrease = () => {
+  onChangeIncrease = () => {
     this.setState(({ increase }) => ({
       increase: !increase
     }))
@@ -40,7 +40,7 @@ class EmployeesListItem extends Component {
         <div className='d-flex justify-content-center align-items-center'>
           <button type="button"
             className="btn-cookie btn-sm "
-            onClick={this.changeIncrease}
+            onClick={this.onChangeIncrease}
           >
             <i className="fas fa-cookie"></i>
           </button>
