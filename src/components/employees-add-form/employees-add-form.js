@@ -32,7 +32,7 @@ class EmployeesAddForm extends Component {
         const { name, salary } = this.state;
 
         return (
-            <div className="app-add-form">
+            <footer className="app-add-form">
                 <h3>Add a new employee</h3>
                 <form
                     className="add-form d-flex"
@@ -60,7 +60,7 @@ class EmployeesAddForm extends Component {
                         Add
                     </button>
                 </form>
-            </div>
+            </footer>
         )
     }
 }

@@ -100,7 +100,7 @@ class App extends Component {
                     employeesIncreased={employeesIncreased}
                 />
 
-                <div className="search-panel">
+                <section className="search-panel">
                     <SearchPanel
                         onUpdateSearch={this.onUpdateSearch}
                     />
@@ -108,13 +108,15 @@ class App extends Component {
                         filter={filter}
                         onFilterSelect={this.onFilterSelect}
                     />
-                </div>
+                </section>
 
-                <EployeesList
-                    data={visibleData}
-                    onDelete={this.onDelete}
-                    onToggleProp={this.onToggleProp}
-                />
+                <section>
+                    <EployeesList
+                        data={visibleData}
+                        onDelete={this.onDelete}
+                        onToggleProp={this.onToggleProp}
+                    />
+                </section>
 
                 <EmployeesAddForm
                     onAdd={this.addItem}
