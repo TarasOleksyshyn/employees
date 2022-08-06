@@ -72,6 +72,7 @@ class App extends Component {
 
     filterPost = (items, filter) => {
         if (filter === 'rise') return items.filter(item => item.rise);
+        if (filter === 'increase') return items.filter(item => item.increase);
         if (filter === 'moreThen1000') return items.filter(item => item.salary > 1000);
         else return items;
     }
